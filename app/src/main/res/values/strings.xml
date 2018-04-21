@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">EmpresaZXY</string>
+    <string name="emprezazxy">Empresa ZXY</string>
+    <string name="cotizador">Cotizador de Compra</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="tipozapato">Tipo Zapato</string>
+    <string name="zapatilla">-Zapatilla</string>
+    <string name="clasico">-Clásico</string>
+    <string name="nike">Nike</string>
+    <string name="adidas">Adidas</string>
+    <string name="puma">Puma</string>
+    <string name="comprar">Comprar</string>
+    <array name="marcas">
+        <item>@string/nike</item>
+        <item>@string/adidas</item>
+        <item>@string/puma</item>
+    </array>
+    <string name="error_1">DIGITE LA CANTIDAD DE LAS ZAPATILLAS</string>
+    <string name="error_2">DIGITE LA CANTIDAD DE LOS CLASICOS</string>
+    <string name="cantidadzapatilla">Digite la cantidad de Zapatillas a comprar</string>
+    <string name="cantidadclasico">Digite la cantidad de los Clásicos</string>
+    <string name="varlozapatillas">Su valor de Zapatillas</string>
+    <string name="valorclasicos">Su valor de Clásicos</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_inicio">Inicio</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
