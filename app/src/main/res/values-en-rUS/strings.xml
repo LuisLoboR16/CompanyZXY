@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CompanyZXY</string>
-    <string name="emprezazxy">Empresa ZXY</string>
+    <string name="emprezazxy">Company ZXY</string>
     <string name="cotizador">Purchase quote</string>
     <string name="hombre">Man</string>
     <string name="mujer">Woman</string>
