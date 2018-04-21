@@ -10,11 +10,12 @@
     tools:layout_editor_absoluteY="8dp">
 
     <TextView
-        android:id="@+id/txtMujer"
+        android:id="@+id/te"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mujer"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/holo_blue_bright"
         android:textSize="30sp" />
 
     <TextView
@@ -22,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/zapatilla"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -59,6 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/clasico"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -87,8 +90,10 @@
         android:id="@+id/btnPagar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
         android:onClick="Calculos"
-        android:text="@string/comprar" />
+        android:text="@string/comprar"
+        android:textColor="@android:color/background_light" />
 
     <EditText
         android:id="@+id/CajaTotalPagarH"
