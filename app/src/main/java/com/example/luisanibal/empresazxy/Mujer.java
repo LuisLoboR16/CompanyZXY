@@ -6,11 +6,13 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class Mujer extends AppCompatActivity {
-    private EditText cantZapatilla,cantClasico,totalZapatilla,totalClasico,totalPagar;
+    private EditText cantZapatilla,cantClasico;
     private Spinner spinZapatilla,spinClasico;
     private String opc[],opc2[],Zapatilla,Clasico;
+    private TextView totalZapatilla,totalClasico,totalPagar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,44 +36,27 @@ public class Mujer extends AppCompatActivity {
     }
 
     public void Calculos(View v){
-        int precio = 0,cant2, total,total2,cant4,full;
+        int cant2,cant4;
         String cant,cant3;
+        double TZapatillas,TClasicos,TotalCompra;
+
         if(validar()) {
             cant = cantZapatilla.getText().toString();
             cant2 = Integer.parseInt(cant);
             Zapatilla = spinZapatilla.getSelectedItem().toString();
 
-            if (Zapatilla.equalsIgnoreCase("nike")) {
-                precio = 100000;
-            }
-            if (Zapatilla.equalsIgnoreCase("adidas")) {
-                precio = 130000;
-            }
-            if (Zapatilla.equalsIgnoreCase("puma")) {
-                precio = 110000;
-            }
-            total = cant2 * precio;
-            totalZapatilla.setText("$"+total);
+            TZapatillas=Metodos.ZapatillaMujer(Zapatilla,cant2);
+            totalZapatilla.setText(getResources().getString(R.string.valorapagarzapatilla)+" $"+TZapatillas);
 
             cant3 = cantClasico.getText().toString();
             cant4 = Integer.parseInt(cant3);
             Clasico = spinClasico.getSelectedItem().toString();
 
-            if (Clasico.equalsIgnoreCase("nike")) {
-                precio = 60000;
-            }
-            if (Clasico.equalsIgnoreCase("adidas")) {
-                precio = 70000;
-            }
-            if (Clasico.equalsIgnoreCase("puma")) {
-                precio = 120000;
-            }
-            total2 = cant4 * precio;
-            totalClasico.setText("$"+total2);
+            TClasicos = Metodos.ClasicoMujer(Clasico,cant4);
+            totalClasico.setText(getResources().getString(R.string.valorapagarclasico)+" $"+TClasicos);
 
-            full = total + total2;
-            totalPagar.setText("$"+full);
-
+            TotalCompra = TZapatillas + TClasicos;
+            totalPagar.setText(getResources().getString(R.string.valorapagartotal)+" $"+TotalCompra);
         }
     }
 

@@ -23,4 +23,9 @@
     <string name="cantidadclasico">TYPE QUANTITY OF CLASSIC TO BUY</string>
     <string name="varlozapatillas">Your value of Shoes</string>
     <string name="valorclasicos">Your value of Classics</string>
+    <string name="valorapagar">Value to purchase</string>
+    <string name="valorapagarclasico">"Value Classics: "</string>
+    <string name="valorapagarzapatilla">"Value Shoes: "</string>
+    <string name="valorapagartotal">"Total value of the purchase "</string>
+    <string name="title_activity_inicio">Start</string>
 </resources>

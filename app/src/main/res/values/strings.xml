@@ -18,10 +18,13 @@
     </array>
     <string name="error_1">DIGITE LA CANTIDAD DE LAS ZAPATILLAS</string>
     <string name="error_2">DIGITE LA CANTIDAD DE LOS CLASICOS</string>
-    <string name="cantidadzapatilla">Digite la cantidad de Zapatillas a comprar</string>
+    <string name="cantidadzapatilla">Digite la cantidad de Zapatillas</string>
     <string name="cantidadclasico">Digite la cantidad de los Clásicos</string>
     <string name="varlozapatillas">Su valor de Zapatillas</string>
     <string name="valorclasicos">Su valor de Clásicos</string>
+    <string name="valorapagarzapatilla">Valor Zapatillas: </string>
+    <string name="valorapagarclasico">Valor Clasicos: </string>
+    <string name="valorapagartotal">Valor total de la compra: </string>
     <string name="title_activity_principal">Principal</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>

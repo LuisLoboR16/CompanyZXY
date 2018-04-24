@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="368dp"
-    android:layout_height="495dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:layout_editor_absoluteX="8dp"
-    tools:layout_editor_absoluteY="8dp">
+    tools:layout_editor_absoluteY="8dp"><![CDATA[
     tools:context=".Principal">
 
-    <TextView
-        android:id="@+id/txtTitulo"
+
+
+    ]]>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:layout_marginBottom="4dp"
-        android:lineSpacingExtra="14sp"
-        android:text="@string/emprezazxy"
-        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-        android:textColor="@android:color/holo_blue_bright"
-        android:textSize="36sp"
-        android:textStyle="bold|italic" />
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:layout_marginBottom="4dp"
+            android:lineSpacingExtra="14sp"
+            android:text="@string/emprezazxy"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +43,7 @@
             android:id="@+id/btnHombre"
             style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="36dp"
-            android:layout_height="420dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#12fdca"
             android:lineSpacingExtra="12sp"
@@ -43,7 +54,7 @@
             android:paddingTop="15dp"
             android:text="@string/hombre"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold|italic"
             tools:layout_editor_absoluteX="148dp"
             tools:layout_editor_absoluteY="157dp" />
@@ -52,13 +63,13 @@
             android:id="@+id/btnMujer"
             style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="38dp"
-            android:layout_height="421dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/holo_blue_bright"
             android:lineSpacingExtra="12sp"
             android:text="@string/mujer"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold|italic"
             tools:layout_editor_absoluteX="160dp"
             tools:layout_editor_absoluteY="217dp" />
